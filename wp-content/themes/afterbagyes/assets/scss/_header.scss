@@ -1,0 +1,69 @@
+@use "common" as *;
+
+.header-area {
+
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 5px;
+
+  .logo {
+    width: 145px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 16px;
+
+
+    img {
+      width: 108px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $theme-color;
+      z-index: -1;
+      border-radius: 0 0 14px 14px;
+    }
+  }
+
+  .manu-wrapper {
+    flex: 1;
+    background-color: $theme-color;
+    padding-right: 55px;
+  }
+}
+
+.main-menu {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 105px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+        font-size: 28px;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 0;
+      }
+    }
+  }
+}

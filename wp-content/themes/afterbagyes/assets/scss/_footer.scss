@@ -1,0 +1,67 @@
+@use "common" as *;
+
+.footer-widget-wrap {
+  margin-bottom: 30px;
+
+  .widget-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+}
+
+.about-widget {
+  p {
+    font-size: 33px;
+    font-weight: 400;
+    color: #9c385c;
+    margin-bottom: 20px;
+  }
+}
+
+.menu-widget {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      margin-bottom: 8px;
+
+      a {
+        font-size: 33px;
+        font-weight: 400;
+        color: #9c385c;
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.social-widget {
+  a {
+    color: #9c385c;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    line-height: 72px;
+    border: 3px solid #9c385c;
+    text-align: center;
+    margin-right: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+
+    &:hover {
+      background-color: #9c385c;
+      color: #fff;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

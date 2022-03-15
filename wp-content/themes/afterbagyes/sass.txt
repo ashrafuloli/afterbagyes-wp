@@ -1,0 +1,1 @@
+sass --watch C:\laragon\www\wordpress-project\afterbagyes\wp-content\themes\afterbagyes\assets\scss\main.scss:C:\laragon\www\wordpress-project\afterbagyes\wp-content\themes\afterbagyes\assets\css\main.css
