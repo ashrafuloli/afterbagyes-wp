@@ -1,1 +1,386 @@
 @use "common" as *;
+
+.hero-area {
+  padding-top: 222px;
+}
+
+.hero-content-wrapper {
+  .hero-title {
+    padding-top: 60px;
+    font-size: 126px;
+    font-weight: 700;
+    color: #9c385c;
+    margin-bottom: 42px;
+  }
+
+  .hero-subtitle {
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero-description {
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 783px;
+    margin-bottom: 65px;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    font-size: 33px;
+    font-weight: 700;
+    color: #fefefc;
+    background-color: #d39153;
+    padding: 15px 140px;
+    border-radius: 30px;
+    margin-left: 163px;
+  }
+}
+
+
+.projecten-section {
+  padding-top: 147px;
+  padding-bottom: 70px;
+}
+
+.projecten-title {
+  font-size: 99px;
+  font-weight: 700;
+  color: #9c385c;
+}
+
+.projecten-subtitle {
+  font-size: 45px;
+  font-weight: 400;
+  color: #9c385c;
+}
+
+.projecten-wrapper {
+  position: relative;
+  z-index: 1;
+  padding-right: 60px;
+  margin-bottom: 90px;
+
+  .projecten-thumb {
+    img {
+      width: 100%;
+    }
+  }
+
+  .projecten-content {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+
+    h4 {
+      font-size: 44px;
+      font-weight: 700;
+      color: #f4f9f4;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 33px;
+      font-weight: 400;
+      color: #f4f9f4;
+    }
+  }
+}
+
+.projecten-btn {
+  a {
+    display: inline-block;
+    font-size: 33px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #9c385c;
+    padding: 20px 100px;
+    border-radius: 30px;
+  }
+}
+
+.projecten-row {
+  @include cmmq(1400px) {
+    --bs-gutter-x: 88px;
+  }
+}
+
+
+.diensten-section {
+  background-color: #d39153;
+  padding-top: 152px;
+  padding-bottom: 222px;
+}
+
+.diensten-header {
+  margin-bottom: 100px;
+
+  h3 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #f4f9f4;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 39px;
+    font-weight: 400;
+    color: #f4f9f4;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.diensten-wrap {
+  background-color: #f4f9f4;
+  text-align: center;
+  padding: 65px 32px 36px;
+  border-radius: 30px;
+
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #9c385c;
+    margin-bottom: 40px;
+  }
+
+  .icon {
+    height: 240px;
+    margin-bottom: 34px;
+  }
+
+  .content {
+    p {
+      font-size: 27px;
+      font-weight: 400;
+      color: #9c385c;
+    }
+
+    .read-more {
+      display: inline-block;
+      font-size: 33px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #9c385c;
+      width: 100%;
+      padding: 20px;
+      border-radius: 30px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.diensten-row {
+  @include cmmq(1400px) {
+    --bs-gutter-x: 116px;
+  }
+}
+
+.blog-section {
+  background-color: #9c385c;
+  padding-top: 114px;
+  padding-bottom: 180px;
+}
+
+.blog-title {
+  h3 {
+    font-size: 100px;
+    font-weight: 700;
+    color: #f4f9f4;
+    //extra
+    margin-bottom: 15px;
+  }
+}
+
+.blog-search {
+  margin-bottom: 60px;
+  margin-top: 65px;
+
+  .search {
+    position: relative;
+    display: inline-block;
+    max-width: 664px;
+    width: 100%;
+
+    input {
+      padding: 15px 48px;
+      border: 0;
+      border-radius: 30px;
+      width: 100%;
+      @include placeholder() {
+        font-size: 29px;
+        font-weight: 400;
+        color: #9c385c;
+      }
+    }
+
+    button {
+      position: absolute;
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 10px;
+      text-align: center;
+      color: #f4f9f4;
+      background: #d39153;
+      padding: 0 32px;
+      right: 7px;
+      top: 50%;
+      height: 85%;
+      border: 0;
+      border-radius: 100px;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}
+
+.blog-categorie {
+  margin-bottom: 87px;
+
+  p {
+    font-size: 37px;
+    font-weight: 400;
+    color: #f4f9f4;
+
+    span {
+      display: inline-block;
+      border-bottom: 1px solid #f4f9f4;
+    }
+  }
+
+}
+
+
+.blog-content-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 105px;
+
+  .blog-content {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    padding: 20px 35px;
+    width: 100%;
+
+    a {
+      display: inline-block;
+      font-size: 33px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #9c385c;
+      padding: 23px 23px;
+      border-radius: 30px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+.blog-btn {
+  a {
+    display: inline-block;
+    font-size: 33px;
+    font-weight: 700;
+    color: #9c385c;
+    background-color: #ffffff;
+    padding: 20px 82px;
+    border-radius: 30px;
+  }
+}
+
+.blog-row {
+  @include cmmq(1400px) {
+    --bs-gutter-x: 112px;
+  }
+}
+
+
+.uitgelicht-header {
+  .uitgelicht-title {
+    font-size: 99px;
+    font-weight: 700;
+    color: #9c385c;
+    margin-bottom: 28px;
+  }
+
+  .uitgelicht-subtitle {
+    font-size: 27px;
+    font-weight: 400;
+    color: #9c385c;
+    margin-bottom: 175px;
+  }
+
+  .uitgelicht-desc {
+    font-size: 27px;
+    font-weight: 400;
+    color: #9c385c; //192 145
+  }
+
+}
+
+
+.blog-artikel-header {
+  .blog-artikel-title {
+    font-size: 99px;
+    font-weight: 700;
+    color: #9c385c;
+    margin-bottom: 28px;
+  }
+
+  .blog-artikel-subtitle {
+    font-size: 27px;
+    font-weight: 400;
+    color: #9c385c;
+    margin-bottom: 175px;
+  }
+
+}
+
+
+
+
+.info-wrap{
+  h3{
+    font-size: 99px;
+    font-weight: 700;
+    color: #9c385c;
+    margin-bottom: 30px;
+  }
+  p{
+    font-size: 42px;
+    font-weight: 400;
+    color: #9c385c;
+  }
+}
+
+.contact-wrap{
+  h3{
+    font-size: 99px;
+    font-weight: 700;
+    color: #9c385c;
+    margin-bottom: 30px;
+  }
+  .ask{
+    font-size: 42px;
+    font-weight: 400;
+    color: #9c385c;
+    margin-bottom: 36px;
+  }
+  .add{
+    font-size: 42px;
+    font-weight: 400;
+    color: #9c385c;
+  }
+
+}
