@@ -2,15 +2,52 @@
 
 .hero-area {
   padding-top: 222px;
+  @include mq(lg) {
+    padding-top: 130px;
+  }
+  @include mq(md) {
+    padding-top: 100px;
+  }
+  @include mq(xs) {
+    padding-top: 50px;
+  }
+}
+
+.hero-thumb {
+  @include mq(md) {
+    text-align: center;
+  }
+  @include mq(xs) {
+    text-align: center;
+  }
 }
 
 .hero-content-wrapper {
+  padding-top: 60px;
+  text-align: center;
+
   .hero-title {
-    padding-top: 60px;
     font-size: 126px;
     font-weight: 700;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 42px;
+    @include mq(xxl) {
+      font-size: 90px;
+    }
+    @include mq(xl) {
+      font-size: 80px;
+    }
+    @include mq(lg) {
+      font-size: 70px;
+    }
+    @include mq(md) {
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+    @include mq(xs) {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
   }
 
   .hero-subtitle {
@@ -18,6 +55,23 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 40px;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
   }
 
   .hero-description {
@@ -25,7 +79,24 @@
     font-weight: 400;
     text-align: center;
     max-width: 783px;
-    margin-bottom: 65px;
+    margin: 0 auto 65px;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
   }
 
   .hero-btn {
@@ -36,7 +107,24 @@
     background-color: #d39153;
     padding: 15px 140px;
     border-radius: 30px;
-    margin-left: 163px;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+      padding: 15px 90px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+      padding: 15px 90px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+      padding: 15px 50px;
+    }
   }
 }
 
@@ -44,27 +132,69 @@
 .projecten-section {
   padding-top: 147px;
   padding-bottom: 70px;
+
+  @include mq(lg) {
+    padding-top: 110px;
+  }
+  @include mq(md) {
+    padding-top: 100px;
+  }
+  @include mq(xs) {
+    padding-top: 70px;
+  }
 }
 
 .projecten-title {
   font-size: 99px;
   font-weight: 700;
-  color: #9c385c;
+  color: #b4355d;
+  @include mq(xxl) {
+    font-size: 90px;
+  }
+  @include mq(xl) {
+    font-size: 80px;
+  }
+  @include mq(lg) {
+    font-size: 70px;
+  }
+  @include mq(md) {
+    font-size: 60px;
+  }
+  @include mq(xs) {
+    font-size: 38px;
+  }
 }
 
 .projecten-subtitle {
   font-size: 45px;
   font-weight: 400;
-  color: #9c385c;
+  color: #b4355d;
+  @include mq(md) {
+    font-size: 35px;
+  }
+  @include mq(xs) {
+    font-size: 24px;
+  }
 }
 
 .projecten-wrapper {
   position: relative;
   z-index: 1;
-  padding-right: 60px;
   margin-bottom: 90px;
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
+  @include mq(xs) {
+    margin-bottom: 30px;
+  }
 
   .projecten-thumb {
+    border-radius: 25px;
+    overflow: hidden;
+    @include mq(xs) {
+      border-radius: 10px;
+    }
+
     img {
       width: 100%;
     }
@@ -77,18 +207,55 @@
     left: 0;
     padding: 25px;
     width: 100%;
+    @include mq(xs) {
+      padding: 15px;
+    }
 
     h4 {
       font-size: 44px;
       font-weight: 700;
       color: #f4f9f4;
       margin-bottom: 0;
+      @include mq(xxl) {
+        font-size: 36px;
+      }
+      @include mq(xl) {
+        font-size: 36px;
+      }
+      @include mq(lg) {
+        font-size: 32px;
+      }
+      @include mq(md) {
+        font-size: 30px;
+      }
+      @include mq(xs) {
+        font-size: 18px;
+      }
+
+      a {
+        color: #fff;
+      }
     }
 
     p {
       font-size: 33px;
       font-weight: 400;
       color: #f4f9f4;
+      @include mq(xxl) {
+        font-size: 23px;
+      }
+      @include mq(xl) {
+        font-size: 23px;
+      }
+      @include mq(lg) {
+        font-size: 20px;
+      }
+      @include mq(md) {
+        font-size: 20px;
+      }
+      @include mq(xs) {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -99,9 +266,26 @@
     font-size: 33px;
     font-weight: 700;
     color: #ffffff;
-    background-color: #9c385c;
+    background-color: #b4355d;
     padding: 20px 100px;
     border-radius: 30px;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+      padding: 20px 50px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+      padding: 15px 40px;
+    }
   }
 }
 
@@ -109,29 +293,85 @@
   @include cmmq(1400px) {
     --bs-gutter-x: 88px;
   }
+  @include mq(xs) {
+    --bs-gutter-x: 20px;
+  }
 }
 
 
 .diensten-section {
   background-color: #d39153;
   padding-top: 152px;
-  padding-bottom: 222px;
+  padding-bottom: 190px;
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  @include mq(xs) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
 }
 
 .diensten-header {
   margin-bottom: 100px;
+
+  @include mq(md) {
+    margin-bottom: 50px;
+  }
+  @include mq(xs) {
+    margin-bottom: 40px;
+  }
 
   h3 {
     font-size: 100px;
     font-weight: 700;
     color: #f4f9f4;
     margin-bottom: 30px;
+    @include mq(xxl) {
+      font-size: 90px;
+    }
+    @include mq(xl) {
+      font-size: 80px;
+    }
+    @include mq(lg) {
+      font-size: 70px;
+    }
+    @include mq(md) {
+      font-size: 60px;
+    }
+    @include mq(xs) {
+      font-size: 38px;
+    }
   }
 
   p {
     font-size: 39px;
     font-weight: 400;
     color: #f4f9f4;
+    @include mq(xxl) {
+      font-size: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include mq(xl) {
+      font-size: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+    }
 
     span {
       font-weight: 700;
@@ -144,24 +384,89 @@
   text-align: center;
   padding: 65px 32px 36px;
   border-radius: 30px;
+  margin-bottom: 30px;
+
+  @include mq(md) {
+    padding: 40px 23px 36px;
+  }
+  @include mq(xs) {
+    padding: 20px 10px;
+    border-radius: 10px;
+  }
 
   .title {
     font-size: 52px;
     font-weight: 700;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 40px;
+    @include mq(xxl) {
+      font-size: 36px;
+    }
+    @include mq(xl) {
+      font-size: 36px;
+    }
+    @include mq(lg) {
+      font-size: 36px;
+    }
+    @include mq(md) {
+      font-size: 30px;
+    }
+    @include mq(xs) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
   }
 
   .icon {
     height: 240px;
     margin-bottom: 34px;
+    @include mq(lg) {
+      height: 120px;
+    }
+    @include mq(md) {
+      height: 120px;
+    }
+    @include mq(xs) {
+      height: 65px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      @include mq(lg) {
+        width: 100px;
+      }
+      @include mq(md) {
+        width: 100px;
+      }
+      @include mq(xs) {
+        width: 50px;
+      }
+    }
   }
 
   .content {
     p {
       font-size: 27px;
       font-weight: 400;
-      color: #9c385c;
+      color: #b4355d;
+      @include mq(xxl) {
+        font-size: 23px;
+      }
+      @include mq(xl) {
+        font-size: 23px;
+      }
+      @include mq(xl) {
+        font-size: 20px;
+      }
+      @include mq(lg) {
+        font-size: 20px;
+      }
+      @include mq(md) {
+        font-size: 20px;
+      }
+      @include mq(xs) {
+        font-size: 14px;
+      }
     }
 
     .read-more {
@@ -169,11 +474,30 @@
       font-size: 33px;
       font-weight: 700;
       color: #ffffff;
-      background-color: #9c385c;
+      background-color: #b4355d;
       width: 100%;
       padding: 20px;
       border-radius: 30px;
       margin-top: 20px;
+      @include mq(xxl) {
+        font-size: 23px;
+      }
+      @include mq(xl) {
+        font-size: 23px;
+      }
+      @include mq(xl) {
+        font-size: 20px;
+      }
+      @include mq(lg) {
+        font-size: 20px;
+      }
+      @include mq(md) {
+        font-size: 20px;
+      }
+      @include mq(xs) {
+        font-size: 14px;
+        padding: 10px 15px;
+      }
     }
   }
 }
@@ -182,12 +506,23 @@
   @include cmmq(1400px) {
     --bs-gutter-x: 116px;
   }
+  @include mq(xs) {
+    --bs-gutter-x: 20px;
+  }
 }
 
 .blog-section {
-  background-color: #9c385c;
+  background-color: #b4355d;
   padding-top: 114px;
   padding-bottom: 180px;
+  @include mq(md) {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  @include mq(xs) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
 }
 
 .blog-title {
@@ -195,14 +530,37 @@
     font-size: 100px;
     font-weight: 700;
     color: #f4f9f4;
-    //extra
     margin-bottom: 15px;
+    @include mq(xxl) {
+      font-size: 90px;
+    }
+    @include mq(xl) {
+      font-size: 80px;
+    }
+    @include mq(lg) {
+      font-size: 70px;
+    }
+    @include mq(md) {
+      font-size: 60px;
+    }
+    @include mq(xs) {
+      font-size: 38px;
+    }
   }
 }
 
 .blog-search {
   margin-bottom: 60px;
   margin-top: 65px;
+
+  @include mq(md) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  @include mq(xs) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
   .search {
     position: relative;
@@ -218,7 +576,7 @@
       @include placeholder() {
         font-size: 29px;
         font-weight: 400;
-        color: #9c385c;
+        color: #b4355d;
       }
     }
 
@@ -237,6 +595,11 @@
       border: 0;
       border-radius: 100px;
       transform: translateY(-50%);
+      img{
+        @include mq(xs){
+          max-width: 20px;
+        }
+      }
     }
 
   }
@@ -250,11 +613,29 @@
     font-size: 37px;
     font-weight: 400;
     color: #f4f9f4;
-
-    span {
-      display: inline-block;
-      border-bottom: 1px solid #f4f9f4;
+    @include mq(xxl) {
+      font-size: 23px;
     }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+    }
+  }
+
+  a {
+    color: #fff;
+    display: inline-block;
+    border-bottom: 1px solid #f4f9f4;
+    margin-right: 5px;
   }
 
 }
@@ -264,6 +645,16 @@
   position: relative;
   z-index: 1;
   margin-bottom: 105px;
+  border-radius: 25px;
+  overflow: hidden;
+
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
+  @include mq(xs) {
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
 
   .blog-content {
     position: absolute;
@@ -272,17 +663,36 @@
     left: 0;
     padding: 20px 35px;
     width: 100%;
+    @include mq(xs){
+      padding: 10px 15px;
+    }
 
     a {
       display: inline-block;
       font-size: 33px;
       font-weight: 700;
       color: #ffffff;
-      background-color: #9c385c;
+      background-color: #b4355d;
       padding: 23px 23px;
       border-radius: 30px;
       text-align: center;
       width: 100%;
+      @include mq(xxl) {
+        font-size: 23px;
+      }
+      @include mq(xl) {
+        font-size: 23px;
+      }
+      @include mq(lg) {
+        font-size: 20px;
+      }
+      @include mq(md) {
+        font-size: 20px;
+      }
+      @include mq(xs) {
+        font-size: 14px;
+        padding: 15px;
+      }
     }
   }
 }
@@ -292,10 +702,26 @@
     display: inline-block;
     font-size: 33px;
     font-weight: 700;
-    color: #9c385c;
+    color: #b4355d;
     background-color: #ffffff;
     padding: 20px 82px;
     border-radius: 30px;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(xs) {
+      padding: 15px 60px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -310,21 +736,65 @@
   .uitgelicht-title {
     font-size: 99px;
     font-weight: 700;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 28px;
+    @include mq(xxl) {
+      font-size: 90px;
+    }
+    @include mq(xl) {
+      font-size: 80px;
+    }
+    @include mq(lg) {
+      font-size: 70px;
+    }
+    @include mq(md) {
+      font-size: 60px;
+    }
+    @include mq(xs) {
+      font-size: 38px;
+    }
   }
 
-  .uitgelicht-subtitle {
+  p {
     font-size: 27px;
     font-weight: 400;
-    color: #9c385c;
-    margin-bottom: 175px;
+    color: #b4355d;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+    }
   }
 
   .uitgelicht-desc {
     font-size: 27px;
     font-weight: 400;
-    color: #9c385c; //192 145
+    color: #b4355d;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+    }
   }
 
 }
@@ -334,53 +804,178 @@
   .blog-artikel-title {
     font-size: 99px;
     font-weight: 700;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 28px;
+    @include mq(xxl) {
+      font-size: 90px;
+    }
+    @include mq(xl) {
+      font-size: 80px;
+    }
+    @include mq(lg) {
+      font-size: 70px;
+    }
+    @include mq(md) {
+      font-size: 60px;
+    }
+    @include mq(xs) {
+      font-size: 38px;
+    }
   }
 
   .blog-artikel-subtitle {
     font-size: 27px;
     font-weight: 400;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 175px;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    font-size: 27px;
+    font-weight: 400;
+    color: #b4355d;
+    @include mq(xxl) {
+      font-size: 23px;
+    }
+    @include mq(xl) {
+      font-size: 23px;
+    }
+    @include mq(lg) {
+      font-size: 20px;
+    }
+    @include mq(md) {
+      font-size: 20px;
+    }
+    @include mq(xs) {
+      font-size: 16px;
+    }
   }
 
 }
 
 
-
-
-.info-wrap{
-  h3{
+.info-wrap {
+  h3 {
     font-size: 99px;
     font-weight: 700;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 30px;
+    @include mq(xxl) {
+      font-size: 90px;
+    }
+    @include mq(xl) {
+      font-size: 80px;
+    }
+    @include mq(lg) {
+      font-size: 70px;
+    }
+    @include mq(md) {
+      font-size: 60px;
+    }
+    @include mq(xs) {
+      font-size: 38px;
+    }
   }
-  p{
+
+  p {
     font-size: 42px;
     font-weight: 400;
-    color: #9c385c;
+    color: #b4355d;
+    @include mq(md) {
+      font-size: 35px;
+    }
+    @include mq(xs) {
+      font-size: 24px;
+    }
   }
 }
 
-.contact-wrap{
-  h3{
+.contact-wrap {
+  h3 {
     font-size: 99px;
     font-weight: 700;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 30px;
+    @include mq(xxl) {
+      font-size: 90px;
+    }
+    @include mq(xl) {
+      font-size: 80px;
+    }
+    @include mq(lg) {
+      font-size: 70px;
+    }
+    @include mq(md) {
+      font-size: 60px;
+    }
+    @include mq(xs) {
+      font-size: 38px;
+    }
   }
-  .ask{
+
+  .ask {
     font-size: 42px;
     font-weight: 400;
-    color: #9c385c;
+    color: #b4355d;
     margin-bottom: 36px;
-  }
-  .add{
-    font-size: 42px;
-    font-weight: 400;
-    color: #9c385c;
+    @include mq(md) {
+      font-size: 35px;
+    }
+    @include mq(xs) {
+      font-size: 24px;
+    }
   }
 
+  .add {
+    font-size: 42px;
+    font-weight: 400;
+    color: #b4355d;
+    @include mq(md) {
+      font-size: 35px;
+    }
+    @include mq(xs) {
+      font-size: 24px;
+    }
+  }
+
+}
+
+.blog-artikel-thumb {
+  overflow: hidden;
+
+  img {
+    border: 5px solid #B4355D;
+    border-radius: 50%;
+    width: 490px;
+    height: 490px;
+    max-width: 100%;
+    max-height: 100%;
+    @include mq(xxl) {
+      height: 450px;
+    }
+    @include mq(xl) {
+      height: 360px;
+    }
+    @include mq(lg) {
+      height: 290px;
+    }
+    @include mq(xs) {
+      height: 350px;
+    }
+  }
 }

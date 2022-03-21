@@ -1,37 +1,33 @@
 <?php get_header() ?>
-    <div class="content-wrapper">
+    <div class="blog-artikel-section pt-150 pt-md-100 pt-xs-70 pb-50">
         <div class="container">
-            <div class="row">
-	            <div class="col-xl-12">
-		            <div class="blog-single-page">
-			            <?php if ( have_posts() ) : ?>
+            <div class="col-xl-12">
+	            <?php if ( have_posts() ) : ?>
 
-				            <?php
-				            /* Start the Loop */
-				            while ( have_posts() ) :
-					            the_post(); ?>
-					            <?php
-					            /*
-								 * Include the Post-Type-specific template for the content.
-								 * If you want to override this in a child theme, then include a file
-								 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-								 */
-					            get_template_part( 'template-parts/content', get_post_format() ); ?>
-				            <?php endwhile; ?>
-
-                            <div class="basic-pagination basic-pagination-2 mb-40">
-					            <?php afterbagyes_pagination( '<i class="far fa-angle-double-left"></i>', '<i class="far fa-angle-double-right"></i>', '', array( 'class' => '' ) ); ?>
-                            </div>
-
+		            <?php
+		            /* Start the Loop */
+		            while ( have_posts() ) :
+			            the_post(); ?>
 			            <?php
-			            else :
+			            /*
+						 * Include the Post-Type-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+						 */
+			            get_template_part( 'template-parts/content', get_post_format() ); ?>
+		            <?php endwhile; ?>
 
-				            get_template_part( 'template-parts/content', 'none' );
-
-			            endif;
-			            ?>
+                    <div class="basic-pagination basic-pagination-2 mb-40">
+			            <?php afterbagyes_pagination( '<i class="far fa-angle-double-left"></i>', '<i class="far fa-angle-double-right"></i>', '', array( 'class' => '' ) ); ?>
                     </div>
-                </div>
+
+	            <?php
+	            else :
+
+		            get_template_part( 'template-parts/content', 'none' );
+
+	            endif;
+	            ?>
             </div>
         </div>
     </div>

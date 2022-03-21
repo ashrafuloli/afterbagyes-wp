@@ -7,7 +7,7 @@ get_header();
 ?>
 
 
-<div class="info-en-contact-section pt-175 pb-175">
+<div class="info-en-contact-section pt-175 pt-lg-150 pt-md-100 pt-xs-70">
     <div class="container">
         <div class="row text-center pb-200">
             <div class="col-xl-12">

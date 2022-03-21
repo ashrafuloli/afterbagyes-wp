@@ -17,6 +17,15 @@
     text-align: center;
     padding-top: 40px;
     padding-bottom: 16px;
+    @include mq(lg){
+      padding-top: 10px;
+    }
+    @include mq(md){
+      padding-top: 10px;
+    }
+    @include mq(xs){
+      padding-top: 10px;
+    }
 
 
     img {
@@ -40,6 +49,12 @@
     flex: 1;
     background-color: $theme-color;
     padding-right: 55px;
+    @include mq(md){
+      padding-right: 15px;
+    }
+    @include mq(xs){
+      padding-right: 15px;
+    }
   }
 }
 
@@ -52,6 +67,12 @@
     li {
       display: inline-block;
       margin-right: 105px;
+      @include mq(xxl){
+        margin-right: 50px;
+      }
+      @include mq(xl){
+        margin-right: 30px;
+      }
 
       &:last-child {
         margin-right: 0;
@@ -63,7 +84,30 @@
         color: #fff;
         font-weight: 700;
         padding: 10px 0;
+        @include mq(xxl){
+          font-size: 23px;
+        }
+        @include mq(xl){
+          font-size: 20px;
+        }
       }
+    }
+  }
+}
+
+.open-mobile-menu{
+  a{
+    display: inline-block;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    color: #b4355d;
+    text-align: center;
+    margin: 15px 0;
+    @include mq(lg){
+      margin: 10px 0;
     }
   }
 }

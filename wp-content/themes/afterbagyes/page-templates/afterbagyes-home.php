@@ -11,13 +11,13 @@ get_header();
 
 <div class="hero-area">
     <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-xl-5">
+        <div class="row justify-content-lg-between justify-content-center">
+            <div class="col-xl-5 col-lg-5 col-md-10">
                 <div class="hero-thumb">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-1.png" alt="thumb">
                 </div>
             </div>
-            <div class="col-xl-6">
+            <div class="col-xl-6 col-lg-7 col-md-10">
                 <div class="hero-content-wrapper">
                     <h2 class="hero-title">afterbagyes.</h2>
                     <p class="hero-subtitle">Samen groeien,</p>
@@ -42,7 +42,7 @@ get_header();
             </div>
         </div>
         <div class="row projecten-row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="projecten-wrapper">
                     <div class="projecten-thumb">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-2.png" alt="thumb">
@@ -53,7 +53,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="projecten-wrapper">
                     <div class="projecten-thumb">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-2.png" alt="thumb">
@@ -64,7 +64,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="projecten-wrapper">
                     <div class="projecten-thumb">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-2.png" alt="thumb">
@@ -76,7 +76,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-md-30 mt-xs-30">
             <div class="col-xl-12 text-center">
                 <div class="projecten-btn">
                     <a href="#">Meer projecten</a>
@@ -101,7 +101,7 @@ get_header();
             </div>
         </div>
         <div class="row diensten-row">
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="diensten-wrap">
                     <h3 class="title">BRANDING</h3>
                     <div class="icon">
@@ -114,7 +114,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="diensten-wrap">
                     <h3 class="title">VORMGEVING</h3>
                     <div class="icon">
@@ -127,7 +127,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="diensten-wrap">
                     <h3 class="title">MEER...</h3>
                     <div class="icon">
@@ -146,7 +146,7 @@ get_header();
 
 <div class="blog-section">
     <div class="container">
-        <div class="row mb-85">
+        <div class="row mb-85 mb-md-50 mb-xs-40">
             <div class="col-xl-12 text-center">
                 <div class="blog-title">
                     <h3>Blog</h3>
@@ -154,7 +154,7 @@ get_header();
             </div>
         </div>
         <div class="row blog-row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-6">
                 <div class="blog-content-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-3.png" alt="thumb">
                     <div class="blog-content">
@@ -162,7 +162,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-6">
                 <div class="blog-content-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-3.png" alt="thumb">
                     <div class="blog-content">
@@ -170,7 +170,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-6">
                 <div class="blog-content-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-3.png" alt="thumb">
                     <div class="blog-content">
@@ -179,7 +179,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row mt-md-30 mt-xs-30">
             <div class="col-xl-12 text-center">
                 <div class="blog-btn">
                     <a href="#">Meer berichten</a>

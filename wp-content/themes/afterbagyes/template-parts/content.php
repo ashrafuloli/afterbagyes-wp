@@ -7,42 +7,36 @@
  * @package afterbagyes
  */
 if ( is_single() ): ?>
-    <article id="post-<?php the_ID(); ?>" <?php post_class( 'blog-wrap mb-30' ); ?>>
-		<?php
-		if ( has_post_thumbnail() ): ?>
-            <div class="blogs-thumb mb-35">
-				<?php the_post_thumbnail( 'afterbagyes-post-details', array(
-					'class' => 'img-responsive',
-					'alt'   => get_the_post_thumbnail_caption( get_the_ID() )
-				) ); ?>
-            </div>
-		<?php
-		endif; ?>
+    <article id="post-<?php the_ID(); ?>" <?php post_class( 'row' ); ?>>
+        <div class="col-xl-8 col-lg-8 order-2 order-lg-1">
+            <div class="blog-artikel-header mt-25">
+                <h3 class="blog-artikel-title">
+				    <?php the_title(); ?>
+                </h3>
 
-        <div class="blog-content">
-            <div class="blog-meta">
-                <span>
-                        <a href="<?php print esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
-                            <i class="fal fa-user"></i> <?php print get_the_author(); ?>
-                        </a>
-                    </span>
-                <span>
-                    <i class="fal fa-calendar-alt"></i> <?php the_time( get_option( 'date_format' ) ); ?>
-                </span>
+			    <?php the_content(); ?>
+			    <?php
+			    wp_link_pages( array(
+				    'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'afterbagyes' ),
+				    'after'       => '</div>',
+				    'link_before' => '<span class="page-number">',
+				    'link_after'  => '</span>',
+			    ) );
+			    ?>
             </div>
-            <div class="blog-text mb-20">
-				<?php the_content(); ?>
-				<?php
-				wp_link_pages( array(
-					'before'      => '<div class="page-links">' . esc_html__( 'Pages:', 'afterbagyes' ),
-					'after'       => '</div>',
-					'link_before' => '<span class="page-number">',
-					'link_after'  => '</span>',
-				) );
-				?>
-            </div>
-			<?php print afterbagyes_get_tag(); ?>
         </div>
+	    <?php
+	    if ( has_post_thumbnail() ): ?>
+            <div class="col-xl-4 col-lg-4 order-1 order-lg-2 text-center mb-md-40 mb-xs-40">
+                <div class="blog-artikel-thumb">
+				    <?php the_post_thumbnail( 'afterbagyes-post-details', array(
+					    'class' => 'img-responsive',
+					    'alt'   => get_the_post_thumbnail_caption( get_the_ID() )
+				    ) ); ?>
+                </div>
+            </div>
+	    <?php
+	    endif; ?>
     </article>
 <?php
 else: ?>

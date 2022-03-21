@@ -122,11 +122,9 @@ add_action( 'afterbagyes_header_style', 'afterbagyes_check_header', 10 );
  */
 
 function afterbagyes_header_style() {
-	$afterbagyes_header_button = get_theme_mod( 'afterbagyes_header_button', true );
-	$afterbagyes_header_text   = get_theme_mod( 'afterbagyes_header_text', 'Products' );
-	$afterbagyes_header_link   = get_theme_mod( 'afterbagyes_header_link', '#' );
+	$header_background = get_post_meta( get_the_ID(), 'header_background', true );
 	?>
-    <header class="header-area">
+    <header class="header-area" style="background-color: <?php echo $header_background; ?>">
         <div class="header-wrapper">
             <div class="logo">
 				<?php afterbagyes_header_logo(); ?>
@@ -134,7 +132,7 @@ function afterbagyes_header_style() {
             <div class="manu-wrapper text-end">
 				<?php afterbagyes_header_menu(); ?>
                 <div class="open-mobile-menu d-inline-block d-xl-none">
-                    <a href="#"><i class="fal fa-bars"></i></a>
+                    <a href="#"><i class="far fa-bars"></i></a>
                 </div>
             </div>
         </div>
@@ -331,52 +329,52 @@ add_action( 'afterbagyes_footer_style', 'afterbagyes_check_footer', 10 );
  * footer  style 1
  */
 function afterbagyes_footer_style() {
-	$afterbagyes_footer_top             = get_theme_mod( 'afterbagyes_footer_top', true );
-	$afterbagyes_footer_top_title       = get_theme_mod( 'afterbagyes_footer_top_title', 'Better Together' );
-	$afterbagyes_footer_top_desc        = get_theme_mod( 'afterbagyes_footer_top_desc', 'Get in touch to see how Afterbagyes can help you.' );
-	$afterbagyes_footer_top_button_text = get_theme_mod( 'afterbagyes_footer_top_button_text', 'Contact Us' );
-	$afterbagyes_footer_top_button_link = get_theme_mod( 'afterbagyes_footer_top_button_link', '#' );
-	$afterbagyes_footer_menu_text       = get_theme_mod( 'afterbagyes_footer_menu_text', 'Navigation' );
-	$afterbagyes_footer_menu            = get_theme_mod( 'afterbagyes_footer_menu', true );
-	$afterbagyes_footer_info_title      = get_theme_mod( 'afterbagyes_footer_info_title', 'Get In Touch' );
-	$info_array                         = [
-		[ 'info_text' => '<span>T:</span> +1 510.859.8084</a>', 'info_link' => '#' ],
-		[ 'info_text' => '<span>E:</span> support@afterbagyes.com</a>', 'info_link' => '#' ],
-	];
-	$afterbagyes_footer_contact_info    = get_theme_mod( 'afterbagyes_footer_contact_info', $info_array );
-	$afterbagyes_footer_social_title    = get_theme_mod( 'afterbagyes_footer_social_title', 'follow us' );
-	$afterbagyes_footer_social          = get_theme_mod( 'afterbagyes_footer_social', true );
-	$afterbagyes_footer_info_list       = get_theme_mod( 'afterbagyes_footer_info_list', true );
+	$afterbagyes_footer_contact_title = get_theme_mod( 'afterbagyes_footer_contact_title', 'Contact' );
+	$afterbagyes_footer_menu_title    = get_theme_mod( 'afterbagyes_footer_menu_title', 'About' );
+	$afterbagyes_footer_social_title  = get_theme_mod( 'afterbagyes_footer_social_title', 'Follow' );
+	$afterbagyes_footer_contact_desc  = get_theme_mod( 'afterbagyes_footer_contact_desc', '<p>afterbagyes <br> info@afterbagyes.nl</p><p>Schapedonk 6 <br> 4942 CE, Raamsdonksveer</p><p>KvK <br> BTW</p>' );
+
+	$afterbagyes_footer_menu   = get_theme_mod( 'afterbagyes_footer_menu', true );
+	$afterbagyes_footer_social = get_theme_mod( 'afterbagyes_footer_social', true );
 	?>
-    <footer class="footer-area pt-130 pb-90">
+    <footer class="footer-area pt-130 pb-90 pt-xs-80 pb-xs-50">
         <div class="widget-wrapper">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-xl-4">
+                    <div class="col-xl-4 col-md-6">
                         <div class="footer-widget-wrap about-widget">
-                            <h3 class="widget-title">Contact</h3>
-                            <p>afterbagyes <br> info@afterbagyes.nl</p>
-                            <p>Schapedonk 6 <br> 4942 CE, Raamsdonksveer</p>
-                            <p>KvK <br> BTW</p>
+							<?php if ( ! empty( $afterbagyes_footer_contact_title ) ): ?>
+                                <h3 class="widget-title">
+									<?php echo $afterbagyes_footer_contact_title; ?>
+                                </h3>
+							<?php endif; ?>
+							<?php if ( ! empty( $afterbagyes_footer_contact_desc ) ): ?>
+								<?php echo $afterbagyes_footer_contact_desc; ?>
+							<?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-widget-wrap menu-widget">
-                            <h3 class="widget-title">About</h3>
-                            <ul>
-                                <li><a href="#">Projecten</a></li>
-                                <li><a href="#">Diensten en prijzen</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Algemene voorwaarden</a></li>
-                                <li><a href="#">Cookies</a></li>
-                            </ul>
+							<?php if ( ! empty( $afterbagyes_footer_menu_title ) ): ?>
+                                <h3 class="widget-title">
+									<?php echo $afterbagyes_footer_menu_title; ?>
+                                </h3>
+							<?php endif; ?>
+							<?php if ( $afterbagyes_footer_menu ): ?>
+								<?php afterbagyes_footer_menu(); ?>
+							<?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-md-6">
                         <div class="footer-widget-wrap social-widget">
-                            <h3 class="widget-title">Follow</h3>
-							<?php footer_social(); ?>
+							<?php if ( ! empty( $afterbagyes_footer_social_title ) ): ?>
+                                <h3 class="widget-title">
+									<?php echo $afterbagyes_footer_social_title; ?>
+                                </h3>
+							<?php endif; ?>
+							<?php if ( $afterbagyes_footer_social ): ?>
+								<?php footer_social(); ?>
+							<?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -515,7 +513,8 @@ function afterbagyes_footer_menu_2() {
  */
 function footer_social() {
 	$afterbagyes_fb_url        = get_theme_mod( 'afterbagyes_fb_url', '#' );
-	$afterbagyes_twitter_url   = get_theme_mod( 'afterbagyes_twitter_url', '#' );
+	$afterbagyes_twitter_url   = get_theme_mod( 'afterbagyes_twitter_url', '' );
+	$afterbagyes_linkedin_url   = get_theme_mod( 'afterbagyes_linkedin_url', '#' );
 	$afterbagyes_instagram_url = get_theme_mod( 'afterbagyes_instagram_url', '#' );
 	?>
     <div class="footer-social">
@@ -524,6 +523,9 @@ function footer_social() {
 		<?php endif; ?>
 		<?php if ( ! empty( $afterbagyes_twitter_url ) ): ?>
             <a href="<?php echo esc_url( $afterbagyes_twitter_url ); ?>"><i class="fa-brands fa-twitter"></i></a>
+		<?php endif; ?>
+		<?php if ( ! empty( $afterbagyes_linkedin_url ) ): ?>
+            <a href="<?php echo esc_url( $afterbagyes_linkedin_url ); ?>"><i class="fab fa-linkedin-in"></i></a>
 		<?php endif; ?>
 		<?php if ( ! empty( $afterbagyes_instagram_url ) ): ?>
             <a href="<?php echo esc_url( $afterbagyes_instagram_url ); ?>"><i class="fa-brands fa-instagram"></i></a>

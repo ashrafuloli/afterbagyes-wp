@@ -21,7 +21,7 @@ get_header();
             </div>
         </div>
         <div class="row diensten-row">
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="diensten-wrap">
                     <h3 class="title">BRANDING</h3>
                     <div class="icon">
@@ -34,7 +34,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="diensten-wrap">
                     <h3 class="title">VORMGEVING</h3>
                     <div class="icon">
@@ -47,7 +47,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6">
+            <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="diensten-wrap">
                     <h3 class="title">MEER...</h3>
                     <div class="icon">

@@ -21,12 +21,12 @@ get_header();
                     </from>
                 </div>
                 <div class="blog-categorie">
-                    <p>Categorie; <span>Online marketing</span>, <span>Design</span>, <span>Fotografie,</span> </p>
+                    <p>Categorie: <a href="#">Online marketing</a>, <a href="#">Design</a>, <a href="#">Fotografie,</a></p>
                 </div>
             </div>
         </div>
         <div class="row blog-row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-6">
                 <div class="blog-content-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-3.png" alt="thumb">
                     <div class="blog-content">
@@ -34,7 +34,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-6">
                 <div class="blog-content-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-3.png" alt="thumb">
                     <div class="blog-content">
@@ -42,7 +42,7 @@ get_header();
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-md-6">
                 <div class="blog-content-wrapper">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/thumb/thumb-3.png" alt="thumb">
                     <div class="blog-content">

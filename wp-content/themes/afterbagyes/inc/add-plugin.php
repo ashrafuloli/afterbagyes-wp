@@ -31,23 +31,23 @@ function afterbagyes_register_required_plugins() {
 			'required' => false,
 		),
 		array(
-			'name'     => esc_html__( 'WooCommerce', 'afterbagyes' ),
-			'slug'     => 'woocommerce',
-			'required' => false,
-		),
-		array(
-			'name'     => esc_html__( 'Classic Editor', 'afterbagyes' ),
-			'slug'     => 'classic-editor',
-			'required' => false,
-		),
-		array(
-			'name'     => esc_html__( 'Classic Widgets', 'afterbagyes' ),
-			'slug'     => 'classic-widgets',
-			'required' => false,
-		),
-		array(
 			'name'     => esc_html__( 'Contact Form 7', 'afterbagyes' ),
 			'slug'     => 'contact-form-7',
+			'required' => false,
+		),
+		array(
+			'name'     => esc_html__( 'Custom Post Type UI', 'afterbagyes' ),
+			'slug'     => 'custom-post-type-ui',
+			'required' => false,
+		),
+		array(
+			'name'     => esc_html__( 'Advanced Custom Fields', 'afterbagyes' ),
+			'slug'     => 'advanced-custom-fields',
+			'required' => false,
+		),
+		array(
+			'name'     => esc_html__( 'Elementor', 'afterbagyes' ),
+			'slug'     => 'elementor',
 			'required' => false,
 		),
 	);
