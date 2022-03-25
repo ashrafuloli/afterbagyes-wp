@@ -451,24 +451,31 @@ class Post_List extends Element_El_Widget {
                             </div>
                         </div>
                     </div>
-                    <div class="row blog-row">
+                    <div class="row blog-row  justify-content-center">
 						<?php
 						if ( ! empty( $posts ) ): ?>
 							<?php foreach ( $posts as $post ):
 								?>
-                                <div class="col-xl-4 col-md-6 col-6">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-6">
                                     <div class="blog-content-wrapper">
-										<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+                                        <div class="thumb">
+                                            <a href="<?php echo esc_url( get_the_permalink( $post->ID ) );?>">
+			                                    <?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+                                            </a>
+                                        </div>
                                         <div class="blog-content">
-											<?php $title = $post->post_title;
-											if ( 'selected' === $settings['show_post_by'] && array_key_exists( $post->ID, $customize_title ) ) {
-												$title = $customize_title[ $post->ID ];
-											}
-											printf( '<a href="%2$s">%1$s</a>',
-												esc_html( $title ),
-												esc_url( get_the_permalink( $post->ID ) )
-											);
-											?>
+                                            <h4>
+			                                    <?php $title = $post->post_title;
+			                                    if ( 'selected' === $settings['show_post_by'] && array_key_exists( $post->ID, $customize_title ) ) {
+				                                    $title = $customize_title[ $post->ID ];
+			                                    }
+			                                    printf( '<a href="%2$s">%1$s</a>',
+				                                    esc_html( $title ),
+				                                    esc_url( get_the_permalink( $post->ID ) )
+			                                    );
+			                                    ?>
+                                            </h4>
+                                            <a href="<?php echo esc_url( get_the_permalink( $post->ID ) ); ?>" class="read-more">view more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -486,10 +493,10 @@ class Post_List extends Element_El_Widget {
                 </div>
             </div>
 		<?php elseif ( ! empty( $settings['design_style'] ) and $settings['design_style'] == 'style_3' ): ?>
-            <div class="projecten-section-2 pt-150 pt-md-100 pt-xs-100">
+            <div class="projecten-section-2 pt-80">
                 <div class="container">
 					<?php if ( ! empty( $settings['title'] ) ) : ?>
-                        <div class="row mb-200 mb-lg-100 mb-md-100 mb-xs-50">
+                        <div class="row mb-50 mb-xs-50">
                             <div class="col-xl-12 text-center">
                                 <h2 class="projecten-title mb-20">
 									<?php echo elh_element_kses_basic( $settings['title'] ); ?>
@@ -500,7 +507,7 @@ class Post_List extends Element_El_Widget {
                             </div>
                         </div>
 					<?php endif; ?>
-                    <div class="row projecten-row">
+                    <div class="row projecten-row justify-content-center">
 						<?php
 						if ( ! empty( $posts ) ): ?>
 							<?php foreach ( $posts as $post ):
@@ -522,7 +529,6 @@ class Post_List extends Element_El_Widget {
 												esc_html( $title ),
 												esc_url( get_the_permalink( $post->ID ) )
 											);
-
 											?>
                                             <p><?php echo wp_trim_words( get_the_content(), 2, '...' ); ?></p>
                                         </div>
@@ -540,7 +546,7 @@ class Post_List extends Element_El_Widget {
 						?>
                     </div>
 					<?php if ( ! empty( $settings['button_text'] ) ): ?>
-                        <div class="row mt-md-30 mt-xs-30">
+                        <div class="row mt-30">
                             <div class="col-xl-12 text-center">
                                 <div class="projecten-btn">
                                     <a href="<?php echo esc_url( $settings['button_link'] ); ?>">
@@ -556,7 +562,7 @@ class Post_List extends Element_El_Widget {
             <div class="blog-section">
                 <div class="container">
 					<?php if ( ! empty( $settings['title'] ) ) : ?>
-                        <div class="row mb-85 mb-md-50 mb-xs-40">
+                        <div class="row mb-50 mb-xs-40">
                             <div class="col-xl-12 text-center">
                                 <div class="blog-title">
                                     <h3><?php echo elh_element_kses_basic( $settings['title'] ); ?></h3>
@@ -564,24 +570,31 @@ class Post_List extends Element_El_Widget {
                             </div>
                         </div>
 					<?php endif; ?>
-                    <div class="row blog-row">
+                    <div class="row blog-row  justify-content-center">
 						<?php
 						if ( ! empty( $posts ) ): ?>
 							<?php foreach ( $posts as $post ):
 								?>
-                                <div class="col-xl-4 col-md-6 col-6">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-6">
                                     <div class="blog-content-wrapper">
-										<?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+                                        <div class="thumb">
+                                            <a href="<?php echo esc_url( get_the_permalink( $post->ID ) );?>">
+		                                        <?php echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+                                            </a>
+                                        </div>
                                         <div class="blog-content">
-											<?php $title = $post->post_title;
-											if ( 'selected' === $settings['show_post_by'] && array_key_exists( $post->ID, $customize_title ) ) {
-												$title = $customize_title[ $post->ID ];
-											}
-											printf( '<a href="%2$s">%1$s</a>',
-												esc_html( $title ),
-												esc_url( get_the_permalink( $post->ID ) )
-											);
-											?>
+											<h4>
+												<?php $title = $post->post_title;
+												if ( 'selected' === $settings['show_post_by'] && array_key_exists( $post->ID, $customize_title ) ) {
+													$title = $customize_title[ $post->ID ];
+												}
+												printf( '<a href="%2$s">%1$s</a>',
+													esc_html( $title ),
+													esc_url( get_the_permalink( $post->ID ) )
+												);
+												?>
+                                            </h4>
+                                            <a href="<?php echo esc_url( get_the_permalink( $post->ID ) ); ?>" class="read-more">view more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -597,7 +610,7 @@ class Post_List extends Element_El_Widget {
 						?>
                     </div>
 					<?php if ( ! empty( $settings['button_text'] ) ): ?>
-                        <div class="row mt-md-30 mt-xs-30">
+                        <div class="row mt-30">
                             <div class="col-xl-12 text-center">
                                 <div class="blog-btn">
                                     <a href="<?php echo esc_url( $settings['button_link'] ); ?>">
@@ -615,11 +628,11 @@ class Post_List extends Element_El_Widget {
 					<?php if ( ! empty( $settings['title'] ) ) : ?>
                         <div class="row">
                             <div class="col-xl-12 text-center">
-                                <h2 class="projecten-title mb-80"><?php echo elh_element_kses_basic( $settings['title'] ); ?></h2>
+                                <h2 class="projecten-title mb-50"><?php echo elh_element_kses_basic( $settings['title'] ); ?></h2>
                             </div>
                         </div>
 					<?php endif; ?>
-                    <div class="row projecten-row">
+                    <div class="row projecten-row justify-content-center">
 						<?php
 						if ( ! empty( $posts ) ): ?>
 							<?php foreach ( $posts as $post ):

@@ -222,7 +222,7 @@ class Banner extends Element_El_Widget {
                 <div class="container">
                     <div class="row justify-content-lg-between justify-content-center">
 						<?php if ( ! empty( $image ) ): ?>
-                            <div class="col-xl-5 col-lg-5 col-md-10">
+                            <div class="col-xl-5 col-lg-5 col-md-10 mb-md-50  mb-xs-50">
                                 <div class="hero-thumb">
                                     <img src="<?php echo $image; ?>" alt="thumb">
                                 </div>

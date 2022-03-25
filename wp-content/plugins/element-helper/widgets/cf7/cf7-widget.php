@@ -247,9 +247,9 @@ class CF7 extends Element_El_Widget {
 		<?php else:
 			?>
 
-            <div class="info-en-contact-section pt-175 pt-lg-150 pt-md-100 pt-xs-70">
+            <div class="info-en-contact-section pt-100 pt-xs-70">
                 <div class="container">
-                    <div class="row text-center pb-200">
+                    <div class="row text-center pb-150">
                         <div class="col-xl-12">
                             <div class="info-wrap">
 								<?php if ( $settings['title'] ) : ?>

@@ -1,9 +1,9 @@
 @use "common" as *;
 
 .hero-area {
-  padding-top: 222px;
+  padding-top: 80px;
   @include mq(lg) {
-    padding-top: 130px;
+    padding-top: 80px;
   }
   @include mq(md) {
     padding-top: 100px;
@@ -23,49 +23,29 @@
 }
 
 .hero-content-wrapper {
-  padding-top: 60px;
   text-align: center;
 
   .hero-title {
-    font-size: 126px;
+    font-size: 50px;
     font-weight: 700;
     color: #b4355d;
-    margin-bottom: 42px;
-    @include mq(xxl) {
-      font-size: 90px;
-    }
-    @include mq(xl) {
-      font-size: 80px;
-    }
-    @include mq(lg) {
-      font-size: 70px;
-    }
+    margin-bottom: 20px;
     @include mq(md) {
-      font-size: 60px;
+      font-size: 40px;
       margin-bottom: 30px;
     }
     @include mq(xs) {
-      font-size: 38px;
+      font-size: 35px;
       margin-bottom: 25px;
     }
   }
 
   .hero-subtitle {
-    font-size: 27px;
+    font-size: 18px;
     font-weight: 500;
     text-align: center;
     margin-bottom: 40px;
-    @include mq(xxl) {
-      font-size: 23px;
-    }
-    @include mq(xl) {
-      font-size: 23px;
-    }
-    @include mq(lg) {
-      font-size: 20px;
-    }
     @include mq(md) {
-      font-size: 18px;
       margin-bottom: 30px;
     }
     @include mq(xs) {
@@ -75,54 +55,34 @@
   }
 
   .hero-description {
-    font-size: 27px;
+    font-size: 16px;
     font-weight: 400;
     text-align: center;
     max-width: 783px;
     margin: 0 auto 65px;
-    @include mq(xxl) {
-      font-size: 23px;
-    }
-    @include mq(xl) {
-      font-size: 23px;
-    }
-    @include mq(lg) {
-      font-size: 20px;
-    }
     @include mq(md) {
-      font-size: 20px;
       margin-bottom: 35px;
     }
     @include mq(xs) {
-      font-size: 16px;
       margin-bottom: 35px;
     }
   }
 
   .hero-btn {
     display: inline-block;
-    font-size: 33px;
+    font-size: 16px;
     font-weight: 700;
     color: #fefefc;
     background-color: #d39153;
-    padding: 15px 140px;
+    padding: 15px 100px;
     border-radius: 30px;
-    @include mq(xxl) {
-      font-size: 23px;
-    }
-    @include mq(xl) {
-      font-size: 23px;
-    }
     @include mq(lg) {
-      font-size: 20px;
       padding: 15px 90px;
     }
     @include mq(md) {
-      font-size: 20px;
       padding: 15px 90px;
     }
     @include mq(xs) {
-      font-size: 16px;
       padding: 15px 50px;
     }
   }
@@ -130,57 +90,33 @@
 
 
 .projecten-section {
-  padding-top: 147px;
-  padding-bottom: 70px;
-
-  @include mq(lg) {
-    padding-top: 110px;
-  }
-  @include mq(md) {
-    padding-top: 100px;
-  }
-  @include mq(xs) {
-    padding-top: 70px;
-  }
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .projecten-title {
-  font-size: 99px;
+  font-size: 50px;
   font-weight: 700;
   color: #b4355d;
-  @include mq(xxl) {
-    font-size: 90px;
-  }
-  @include mq(xl) {
-    font-size: 80px;
-  }
-  @include mq(lg) {
-    font-size: 70px;
-  }
-  @include mq(md) {
-    font-size: 60px;
-  }
   @include mq(xs) {
     font-size: 38px;
   }
 }
 
 .projecten-subtitle {
-  font-size: 45px;
+  font-size: 24px;
   font-weight: 400;
   color: #b4355d;
-  @include mq(md) {
-    font-size: 35px;
-  }
+
   @include mq(xs) {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
 .projecten-wrapper {
   position: relative;
   z-index: 1;
-  margin-bottom: 90px;
+  margin-bottom: 50px;
   @include mq(md) {
     margin-bottom: 30px;
   }
@@ -212,22 +148,10 @@
     }
 
     h4 {
-      font-size: 44px;
+      font-size: 20px;
       font-weight: 700;
       color: #f4f9f4;
-      margin-bottom: 0;
-      @include mq(xxl) {
-        font-size: 36px;
-      }
-      @include mq(xl) {
-        font-size: 36px;
-      }
-      @include mq(lg) {
-        font-size: 32px;
-      }
-      @include mq(md) {
-        font-size: 30px;
-      }
+      margin-bottom: 10px;
       @include mq(xs) {
         font-size: 18px;
       }
@@ -238,24 +162,9 @@
     }
 
     p {
-      font-size: 33px;
+      font-size: 14px;
       font-weight: 400;
       color: #f4f9f4;
-      @include mq(xxl) {
-        font-size: 23px;
-      }
-      @include mq(xl) {
-        font-size: 23px;
-      }
-      @include mq(lg) {
-        font-size: 20px;
-      }
-      @include mq(md) {
-        font-size: 20px;
-      }
-      @include mq(xs) {
-        font-size: 14px;
-      }
     }
   }
 }
@@ -263,35 +172,21 @@
 .projecten-btn {
   a {
     display: inline-block;
-    font-size: 33px;
+    font-size: 16px;
     font-weight: 700;
     color: #ffffff;
     background-color: #b4355d;
-    padding: 20px 100px;
+    padding: 15px 100px;
     border-radius: 30px;
-    @include mq(xxl) {
-      font-size: 23px;
-    }
-    @include mq(xl) {
-      font-size: 23px;
-    }
-    @include mq(lg) {
-      font-size: 20px;
-    }
-    @include mq(md) {
-      font-size: 20px;
-      padding: 20px 50px;
-    }
     @include mq(xs) {
-      font-size: 16px;
       padding: 15px 40px;
     }
   }
 }
 
 .projecten-row {
-  @include cmmq(1400px) {
-    --bs-gutter-x: 88px;
+  @include cmmq(1200px) {
+    --bs-gutter-x: 50px;
   }
   @include mq(xs) {
     --bs-gutter-x: 20px;
@@ -301,12 +196,8 @@
 
 .diensten-section {
   background-color: #d39153;
-  padding-top: 152px;
-  padding-bottom: 190px;
-  @include mq(md) {
-    padding-top: 100px;
-    padding-bottom: 70px;
-  }
+  padding-top: 100px;
+  padding-bottom: 70px;
   @include mq(xs) {
     padding-top: 70px;
     padding-bottom: 40px;
@@ -314,7 +205,7 @@
 }
 
 .diensten-header {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 
   @include mq(md) {
     margin-bottom: 50px;
@@ -324,53 +215,23 @@
   }
 
   h3 {
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 700;
     color: #f4f9f4;
     margin-bottom: 30px;
-    @include mq(xxl) {
-      font-size: 90px;
-    }
-    @include mq(xl) {
-      font-size: 80px;
-    }
-    @include mq(lg) {
-      font-size: 70px;
-    }
-    @include mq(md) {
-      font-size: 60px;
-    }
     @include mq(xs) {
       font-size: 38px;
     }
   }
 
   p {
-    font-size: 39px;
+    font-size: 18px;
     font-weight: 400;
     color: #f4f9f4;
-    @include mq(xxl) {
-      font-size: 30px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    @include mq(xl) {
-      font-size: 30px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    @include mq(lg) {
-      font-size: 20px;
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-    @include mq(md) {
-      font-size: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+    padding: 0 100px;
     @include mq(xs) {
       font-size: 16px;
+      padding: 0;
     }
 
     span {
@@ -382,7 +243,7 @@
 .diensten-wrap {
   background-color: #f4f9f4;
   text-align: center;
-  padding: 65px 32px 36px;
+  padding: 65px 30px 36px;
   border-radius: 30px;
   margin-bottom: 30px;
 
@@ -395,22 +256,10 @@
   }
 
   .title {
-    font-size: 52px;
+    font-size: 24px;
     font-weight: 700;
     color: #b4355d;
-    margin-bottom: 40px;
-    @include mq(xxl) {
-      font-size: 36px;
-    }
-    @include mq(xl) {
-      font-size: 36px;
-    }
-    @include mq(lg) {
-      font-size: 36px;
-    }
-    @include mq(md) {
-      font-size: 30px;
-    }
+    margin-bottom: 30px;
     @include mq(xs) {
       font-size: 18px;
       margin-bottom: 20px;
@@ -418,26 +267,15 @@
   }
 
   .icon {
-    height: 240px;
-    margin-bottom: 34px;
-    @include mq(lg) {
-      height: 120px;
-    }
-    @include mq(md) {
-      height: 120px;
-    }
+    height: 70px;
+    margin-bottom: 25px;
     @include mq(xs) {
-      height: 65px;
+      height: 60px;
       margin-bottom: 20px;
     }
 
     img {
-      @include mq(lg) {
-        width: 100px;
-      }
-      @include mq(md) {
-        width: 100px;
-      }
+      width: 60px;
       @include mq(xs) {
         width: 50px;
       }
@@ -446,24 +284,9 @@
 
   .content {
     p {
-      font-size: 27px;
+      font-size: 16px;
       font-weight: 400;
       color: #b4355d;
-      @include mq(xxl) {
-        font-size: 23px;
-      }
-      @include mq(xl) {
-        font-size: 23px;
-      }
-      @include mq(xl) {
-        font-size: 20px;
-      }
-      @include mq(lg) {
-        font-size: 20px;
-      }
-      @include mq(md) {
-        font-size: 20px;
-      }
       @include mq(xs) {
         font-size: 14px;
       }
@@ -471,29 +294,14 @@
 
     .read-more {
       display: inline-block;
-      font-size: 33px;
+      font-size: 16px;
       font-weight: 700;
       color: #ffffff;
       background-color: #b4355d;
       width: 100%;
-      padding: 20px;
+      padding: 15px 20px;
       border-radius: 30px;
       margin-top: 20px;
-      @include mq(xxl) {
-        font-size: 23px;
-      }
-      @include mq(xl) {
-        font-size: 23px;
-      }
-      @include mq(xl) {
-        font-size: 20px;
-      }
-      @include mq(lg) {
-        font-size: 20px;
-      }
-      @include mq(md) {
-        font-size: 20px;
-      }
       @include mq(xs) {
         font-size: 14px;
         padding: 10px 15px;
@@ -503,8 +311,8 @@
 }
 
 .diensten-row {
-  @include cmmq(1400px) {
-    --bs-gutter-x: 116px;
+  @include cmmq(1200px) {
+    --bs-gutter-x: 50px;
   }
   @include mq(xs) {
     --bs-gutter-x: 20px;
@@ -513,12 +321,8 @@
 
 .blog-section {
   background-color: #b4355d;
-  padding-top: 114px;
-  padding-bottom: 180px;
-  @include mq(md) {
-    padding-top: 100px;
-    padding-bottom: 70px;
-  }
+  padding-top: 100px;
+  padding-bottom: 100px;
   @include mq(xs) {
     padding-top: 70px;
     padding-bottom: 40px;
@@ -527,22 +331,10 @@
 
 .blog-title {
   h3 {
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 700;
     color: #f4f9f4;
     margin-bottom: 15px;
-    @include mq(xxl) {
-      font-size: 90px;
-    }
-    @include mq(xl) {
-      font-size: 80px;
-    }
-    @include mq(lg) {
-      font-size: 70px;
-    }
-    @include mq(md) {
-      font-size: 60px;
-    }
     @include mq(xs) {
       font-size: 38px;
     }
@@ -550,17 +342,8 @@
 }
 
 .blog-search {
-  margin-bottom: 60px;
-  margin-top: 65px;
-
-  @include mq(md) {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  @include mq(xs) {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   .search {
     position: relative;
@@ -595,8 +378,9 @@
       border: 0;
       border-radius: 100px;
       transform: translateY(-50%);
-      img{
-        @include mq(xs){
+
+      img {
+        @include mq(xs) {
           max-width: 20px;
         }
       }
@@ -610,15 +394,9 @@
   margin-bottom: 87px;
 
   p {
-    font-size: 37px;
+    font-size: 23px;
     font-weight: 400;
     color: #f4f9f4;
-    @include mq(xxl) {
-      font-size: 23px;
-    }
-    @include mq(xl) {
-      font-size: 23px;
-    }
 
     @include mq(lg) {
       font-size: 20px;
@@ -644,9 +422,28 @@
 .blog-content-wrapper {
   position: relative;
   z-index: 1;
-  margin-bottom: 105px;
+  margin-bottom: 30px;
   border-radius: 25px;
   overflow: hidden;
+
+  .thumb{
+    a{
+      display: block;
+      position: relative;
+      z-index: 1;
+      &:after {
+        content: "";
+        background: #000;
+        opacity: 0.2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    }
+  }
 
   @include mq(md) {
     margin-bottom: 30px;
@@ -663,32 +460,28 @@
     left: 0;
     padding: 20px 35px;
     width: 100%;
-    @include mq(xs){
+    @include mq(xs) {
       padding: 10px 15px;
     }
 
-    a {
+    h4 {
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .read-more {
       display: inline-block;
-      font-size: 33px;
+      font-size: 16px;
       font-weight: 700;
       color: #ffffff;
       background-color: #b4355d;
-      padding: 23px 23px;
+      padding: 15px 20px;
       border-radius: 30px;
       text-align: center;
       width: 100%;
-      @include mq(xxl) {
-        font-size: 23px;
-      }
-      @include mq(xl) {
-        font-size: 23px;
-      }
-      @include mq(lg) {
-        font-size: 20px;
-      }
-      @include mq(md) {
-        font-size: 20px;
-      }
       @include mq(xs) {
         font-size: 14px;
         padding: 15px;
@@ -700,24 +493,12 @@
 .blog-btn {
   a {
     display: inline-block;
-    font-size: 33px;
+    font-size: 16px;
     font-weight: 700;
     color: #b4355d;
     background-color: #ffffff;
-    padding: 20px 82px;
+    padding: 15px 60px;
     border-radius: 30px;
-    @include mq(xxl) {
-      font-size: 23px;
-    }
-    @include mq(xl) {
-      font-size: 23px;
-    }
-    @include mq(lg) {
-      font-size: 20px;
-    }
-    @include mq(md) {
-      font-size: 20px;
-    }
     @include mq(xs) {
       padding: 15px 60px;
       font-size: 14px;
@@ -726,8 +507,8 @@
 }
 
 .blog-row {
-  @include cmmq(1400px) {
-    --bs-gutter-x: 112px;
+  @include cmmq(1200px) {
+    --bs-gutter-x: 60px;
   }
 }
 
@@ -802,16 +583,10 @@
 
 .blog-artikel-header {
   .blog-artikel-title {
-    font-size: 99px;
+    font-size: 75px;
     font-weight: 700;
     color: #b4355d;
     margin-bottom: 28px;
-    @include mq(xxl) {
-      font-size: 90px;
-    }
-    @include mq(xl) {
-      font-size: 80px;
-    }
     @include mq(lg) {
       font-size: 70px;
     }
@@ -824,16 +599,10 @@
   }
 
   .blog-artikel-subtitle {
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 400;
     color: #b4355d;
     margin-bottom: 175px;
-    @include mq(xxl) {
-      font-size: 23px;
-    }
-    @include mq(xl) {
-      font-size: 23px;
-    }
     @include mq(lg) {
       font-size: 20px;
     }
@@ -871,85 +640,52 @@
 
 .info-wrap {
   h3 {
-    font-size: 99px;
+    font-size: 50px;
     font-weight: 700;
     color: #b4355d;
-    margin-bottom: 30px;
-    @include mq(xxl) {
-      font-size: 90px;
-    }
-    @include mq(xl) {
-      font-size: 80px;
-    }
-    @include mq(lg) {
-      font-size: 70px;
-    }
-    @include mq(md) {
-      font-size: 60px;
-    }
+    margin-bottom: 20px;
     @include mq(xs) {
-      font-size: 38px;
+      font-size: 36px;
     }
   }
 
   p {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 400;
     color: #b4355d;
-    @include mq(md) {
-      font-size: 35px;
-    }
     @include mq(xs) {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
 }
 
 .contact-wrap {
   h3 {
-    font-size: 99px;
+    font-size: 50px;
     font-weight: 700;
     color: #b4355d;
-    margin-bottom: 30px;
-    @include mq(xxl) {
-      font-size: 90px;
-    }
-    @include mq(xl) {
-      font-size: 80px;
-    }
-    @include mq(lg) {
-      font-size: 70px;
-    }
-    @include mq(md) {
-      font-size: 60px;
-    }
+    margin-bottom: 20px;
     @include mq(xs) {
-      font-size: 38px;
+      font-size: 36px;
     }
   }
 
   .ask {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 400;
     color: #b4355d;
-    margin-bottom: 36px;
-    @include mq(md) {
-      font-size: 35px;
-    }
+    margin-bottom: 20px;
     @include mq(xs) {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
 
   .add {
-    font-size: 42px;
+    font-size: 24px;
     font-weight: 400;
     color: #b4355d;
-    @include mq(md) {
-      font-size: 35px;
-    }
     @include mq(xs) {
-      font-size: 24px;
+      font-size: 18px;
     }
   }
 
@@ -961,16 +697,10 @@
   img {
     border: 5px solid #B4355D;
     border-radius: 50%;
-    width: 490px;
-    height: 490px;
+    width: 360px;
+    height: 360px;
     max-width: 100%;
     max-height: 100%;
-    @include mq(xxl) {
-      height: 450px;
-    }
-    @include mq(xl) {
-      height: 360px;
-    }
     @include mq(lg) {
       height: 290px;
     }

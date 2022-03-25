@@ -279,12 +279,12 @@ class Service extends Element_El_Widget {
                             </div>
                         </div>
                     </div>
-                    <div class="row diensten-row">
+                    <div class="row diensten-row justify-content-center">
 						<?php
 						foreach ( $settings['slides'] as $slide ):
 							$image = ( ! empty( $slide['image']['id'] ) ) ? wp_get_attachment_image_url( $slide['image']['id'], 'full' ) : '';
 							?>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-6">
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-6">
                                 <div class="diensten-wrap">
 									<?php if ( ! empty( $slide['title'] ) ) : ?>
                                         <h3 class="title">

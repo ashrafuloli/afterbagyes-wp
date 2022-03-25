@@ -337,11 +337,11 @@ function afterbagyes_footer_style() {
 	$afterbagyes_footer_menu   = get_theme_mod( 'afterbagyes_footer_menu', true );
 	$afterbagyes_footer_social = get_theme_mod( 'afterbagyes_footer_social', true );
 	?>
-    <footer class="footer-area pt-130 pb-90 pt-xs-80 pb-xs-50">
+    <footer class="footer-area pt-50 pb-50">
         <div class="widget-wrapper">
             <div class="container">
-                <div class="row justify-content-between">
-                    <div class="col-xl-4 col-md-6">
+                <div class="row justify-content-lg-between justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="footer-widget-wrap about-widget">
 							<?php if ( ! empty( $afterbagyes_footer_contact_title ) ): ?>
                                 <h3 class="widget-title">
@@ -353,7 +353,7 @@ function afterbagyes_footer_style() {
 							<?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget-wrap menu-widget">
 							<?php if ( ! empty( $afterbagyes_footer_menu_title ) ): ?>
                                 <h3 class="widget-title">
@@ -365,7 +365,7 @@ function afterbagyes_footer_style() {
 							<?php endif; ?>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="footer-widget-wrap social-widget">
 							<?php if ( ! empty( $afterbagyes_footer_social_title ) ): ?>
                                 <h3 class="widget-title">

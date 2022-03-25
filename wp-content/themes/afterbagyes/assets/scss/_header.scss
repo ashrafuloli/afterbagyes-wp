@@ -11,25 +11,36 @@
   padding: 0 5px;
 
   .logo {
-    width: 145px;
+    width: 140px;
     position: relative;
     z-index: 1;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 16px;
-    @include mq(lg){
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    @include mq(lg) {
       padding-top: 10px;
     }
-    @include mq(md){
+
+    @include mq(md) {
+      width: 110px;
       padding-top: 10px;
     }
-    @include mq(xs){
+
+    @include mq(xs) {
+      width: 100px;
       padding-top: 10px;
     }
 
 
     img {
       width: 108px;
+      @include mq(md) {
+        width: 70px;
+      }
+      @include mq(xs) {
+        width: 70px;
+      }
     }
 
     &:before {
@@ -49,10 +60,10 @@
     flex: 1;
     background-color: $theme-color;
     padding-right: 55px;
-    @include mq(md){
+    @include mq(md) {
       padding-right: 15px;
     }
-    @include mq(xs){
+    @include mq(xs) {
       padding-right: 15px;
     }
   }
@@ -67,10 +78,10 @@
     li {
       display: inline-block;
       margin-right: 105px;
-      @include mq(xxl){
+      @include mq(xxl) {
         margin-right: 50px;
       }
-      @include mq(xl){
+      @include mq(xl) {
         margin-right: 30px;
       }
 
@@ -80,34 +91,34 @@
 
       a {
         display: block;
-        font-size: 28px;
+        font-size: 16px;
         color: #fff;
         font-weight: 700;
         padding: 10px 0;
-        @include mq(xxl){
-          font-size: 23px;
-        }
-        @include mq(xl){
-          font-size: 20px;
-        }
       }
     }
   }
 }
 
-.open-mobile-menu{
-  a{
+.open-mobile-menu {
+  a {
     display: inline-block;
-    font-size: 23px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     background-color: #fff;
     color: #b4355d;
     text-align: center;
-    margin: 15px 0;
-    @include mq(lg){
-      margin: 10px 0;
+    margin: 10px 0;
+    @include mq(lg) {
+      margin: 5px 0;
+    }
+    @include mq(md) {
+      margin: 5px 0;
+    }
+    @include mq(xs) {
+      margin: 5px 0;
     }
   }
 }
